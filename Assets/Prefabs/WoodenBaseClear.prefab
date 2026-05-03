@@ -184,12 +184,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1713281055338020275}
-  - {fileID: 2381702765451283004}
-  - {fileID: 5182982776000437876}
   - {fileID: 8563814373611916063}
   - {fileID: 5199059635623440921}
   - {fileID: 6662259477243695327}
+  - {fileID: 1713281055338020275}
+  - {fileID: 2381702765451283004}
+  - {fileID: 5182982776000437876}
   m_Father: {fileID: 7253523317702483155}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2652820458151487564
@@ -221,12 +221,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3199174255692400972}
-  - {fileID: 2435311058684223325}
-  - {fileID: 8203774411447066317}
   - {fileID: 4840495619582853120}
   - {fileID: 1994855107780093779}
   - {fileID: 3335329628885377925}
+  - {fileID: 3199174255692400972}
+  - {fileID: 2435311058684223325}
+  - {fileID: 8203774411447066317}
   m_Father: {fileID: 7253523317702483155}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &3145035627658651788
@@ -413,12 +413,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2211833886228671791}
-  - {fileID: 8392211890701276788}
-  - {fileID: 6605974563460756330}
   - {fileID: 7469919987377553498}
   - {fileID: 2310684044058893997}
   - {fileID: 1383444524236681674}
+  - {fileID: 2211833886228671791}
+  - {fileID: 8392211890701276788}
+  - {fileID: 6605974563460756330}
   m_Father: {fileID: 7253523317702483155}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &4620653711321168248
@@ -450,12 +450,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4312868334869478119}
-  - {fileID: 7808729389719669423}
-  - {fileID: 4009046478320860014}
   - {fileID: 6478797295437859976}
   - {fileID: 807373000026222869}
   - {fileID: 217141018861661367}
+  - {fileID: 4312868334869478119}
+  - {fileID: 7808729389719669423}
+  - {fileID: 4009046478320860014}
   m_Father: {fileID: 7253523317702483155}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &5534009163653855688
@@ -638,7 +638,7 @@ Transform:
   m_GameObject: {fileID: 6480072324540215500}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.546, z: -0}
+  m_LocalPosition: {x: 0, y: -0.546, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -811,7 +811,7 @@ GameObject:
   - component: {fileID: 6233609293987976942}
   - component: {fileID: 2139967380446788191}
   - component: {fileID: 5900917328346686655}
-  - component: {fileID: 7874399285008011185}
+  - component: {fileID: -2738440298698184654}
   m_Layer: 0
   m_Name: WoodenBaseClear
   m_TagString: Untagged
@@ -827,7 +827,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8124196946227854450}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.5, y: 1, z: 2.5}
   m_ConstrainProportionsScale: 0
@@ -837,7 +837,7 @@ Transform:
   - {fileID: 8070372385007063449}
   - {fileID: 8049457623356115980}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!33 &6233609293987976942
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -866,8 +866,6 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -889,11 +887,9 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &5900917328346686655
 BoxCollider:
@@ -916,7 +912,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7874399285008011185
+--- !u!114 &-2738440298698184654
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -927,13 +923,11 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac8630d41f784c4db2410d361f096859, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SegmentPopulator
-  subPrefab: {fileID: 7624272258782588007, guid: 4a7d0b307a118a642913805f17bff874, type: 3}
-  faceTransforms:
-  - {fileID: 8763711140529835913}
-  - {fileID: 6456139517007063400}
-  - {fileID: 8070372385007063449}
-  - {fileID: 8049457623356115980}
+  m_EditorClassIdentifier: 
+  segmentData: {fileID: 11400000, guid: 90b443a953d1b264d9b22a062bcc32bf, type: 2}
+  faceTransform: {fileID: 0}
+  ladderTag: Ladder
+  topLadderSlots: 000000
 --- !u!1 &8339117152691942386
 GameObject:
   m_ObjectHideFlags: 0
