@@ -3,20 +3,18 @@ using System.Collections.Generic;
 
 public class BasicObjectPooler : MonoBehaviour
 {
-    public GameObject prefab;  // The prefab to pool.
-    public int initialPoolSize = 10;  // Initial number of objects in the pool.
+    public GameObject prefab;
+    public int initialPoolSize = 10; 
     
-    private Queue<GameObject> pooledObjects;  // A queue to hold pooled objects.
+    private Queue<GameObject> pooledObjects; 
 
     void Start()
     {
         pooledObjects = new Queue<GameObject>();
-        
-        // Populate the pool with initial objects.
         for (int i = 0; i < initialPoolSize; i++)
         {
             GameObject obj = Instantiate(prefab);
-            obj.SetActive(false);  // Deactivate initially to save resources.
+            obj.SetActive(false);
             pooledObjects.Enqueue(obj);
         }
     }
@@ -26,11 +24,9 @@ public class BasicObjectPooler : MonoBehaviour
         if (pooledObjects.Count > 0)
         {
             GameObject obj = pooledObjects.Dequeue();
-            obj.SetActive(true);  // Activate the object when retrieved.
+            obj.SetActive(true);
             return obj;
         }
-        
-        // If no objects are available, instantiate a new one.
         GameObject newObj = Instantiate(prefab);
         return newObj;
     }
@@ -39,7 +35,7 @@ public class BasicObjectPooler : MonoBehaviour
     {
         if (obj != null)
         {
-            obj.SetActive(false);  // Deactivate the object when returned to pool.
+            obj.SetActive(false); 
             pooledObjects.Enqueue(obj);
         }
     }
